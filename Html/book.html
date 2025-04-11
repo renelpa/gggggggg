@@ -2,18 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book Now - DeeKen Hostel</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><a href="index.html">← Back to Home</a></header>
+  <header>
+    <a href="login.html" class="login-btn">Owner Login</a>
+    <h1>Book Your Stay</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="amenities.html">Amenities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <main>
-    <h1>Book a Room</h1>
-    <form action="#" method="post">
-      <input type="text" placeholder="Full Name" required /><br />
-      <input type="email" placeholder="Email" required /><br />
-      <input type="date" placeholder="Check-in Date" required /><br />
-      <input type="date" placeholder="Check-out Date" required /><br />
-      <select required>\n        <option value=\"\">Select Room Type</option>\n        <option value=\"standard\">Standard</option>\n        <option value=\"deluxe\">Deluxe</option>\n        <option value=\"dormitory\">Dormitory</option>\n      </select><br />\n      <button type=\"submit\">Submit Booking</button>\n    </form>\n  </main>\n</body>\n</html>\n```\n\n---\n\n🛠️ **Next Step:**\n- You can copy these codes into separate files: `about.html`, `rooms.html`, etc., and upload them along with your main `index.html` to your GitHub repo.\n- Add a `style.css` file to reuse the styles if you want cleaner code.\n\nWant me to help with the `style.css` file next or copy over your current homepage style to all these pages?"
-}
+    <h1>Reservation Form</h1>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="date" placeholder="Check-in Date" required />
+      <input type="date" placeholder="Check-out Date" required />
+      <select required>
+        <option value="">Select Room Type</option>
+        <option>Standard</option>
+        <option>Dormitory</option>
+        <option>Family</option>
+      </select>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 DeeKen Hostel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
