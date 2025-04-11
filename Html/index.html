@@ -1,121 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeeKen Hostel</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    header h1 {
-      margin: 0;
-    }
-    
-    .ad-container {
-      text-align: center;
-      margin: 20px 0;
-    }
-    
-    .sidebar {
-      width: 30%;
-      float: right;
-      padding: 20px;
-    }
-
-    .main-content {
-      width: 70%;
-      float: left;
-      padding: 20px;
-    }
-
-    footer {
-      clear: both;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    .ad-footer {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .clearfix {
-      clear: both;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-
   <header>
-    <h1>Welcome to DeeKen Hostel</h1>
-    <p>Your home away from home in Caramoan</p>
+    <a href="login.html" class="login-btn">Owner Login</a>
+    <h1>DeeKen Hostel</h1>
+    <p>Your comfort is our priority</p>
   </header>
-
-  <!-- AD BELOW HEADER -->
-  <div class="ad-container">
-    <!-- Your Example Ad Code -->
-    <script async src="https://youradnetwork.com/ad.js"></script>
-    <ins class="adsbyexample" style="display:block" data-ad-client="ca-pub-123456789" data-ad-slot="987654321"
-      data-ad-format="auto"></ins>
-    <script>
-      (adsbyexample = window.adsbyexample || []).push({});
-    </script>
-  </div>
-
-  <div class="main-content">
-    <h2>About Us</h2>
-    <p>DeeKen Hostel is located in the heart of Caramoan, offering comfortable and affordable accommodation for travelers
-      and adventurers.</p>
-
-    <h2>Rooms</h2>
-    <p>We offer various room types, including dormitory-style and private rooms, to suit every budget.</p>
-
-    <h2>Amenities</h2>
-    <p>Enjoy our amenities, including free Wi-Fi, breakfast, and guided tours of Caramoan’s beautiful sights.</p>
-  </div>
-
-  <div class="sidebar">
-    <!-- AD IN SIDEBAR -->
-    <script async src="https://youradnetwork.com/ad.js"></script>
-    <ins class="adsbyexample" style="display:block" data-ad-client="ca-pub-123456789" data-ad-slot="987654321"
-      data-ad-format="auto"></ins>
-    <script>
-      (adsbyexample = window.adsbyexample || []).push({});
-    </script>
-  </div>
-
-  <div class="clearfix"></div>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="amenities.html">Amenities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Experience the Best Stay in Caramoan</h2>
+    <p>Discover comfort, convenience, and a friendly atmosphere at DeeKen Hostel.</p>
+    <div class="info-buttons">
+      <a href="rooms.html">View Rooms</a>
+      <a href="book.html">Book Now</a>
+      <a href="contact.html">Get in Touch</a>
+    </div>
+  </section>
   <footer>
     <p>&copy; 2025 DeeKen Hostel. All rights reserved.</p>
-
-    <!-- AD AT THE BOTTOM (FOOTER) -->
-    <div class="ad-footer">
-      <script async src="https://youradnetwork.com/ad.js"></script>
-      <ins class="adsbyexample" style="display:block" data-ad-client="ca-pub-123456789" data-ad-slot="987654321"
-        data-ad-format="auto"></ins>
-      <script>
-        (adsbyexample = window.adsbyexample || []).push({});
-      </script>
-    </div>
   </footer>
-
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat messenger-button"></div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "YOUR_PAGE_ID");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
 </body>
-
 </html>
